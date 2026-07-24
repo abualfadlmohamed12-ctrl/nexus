@@ -49,7 +49,7 @@ export default function LandingPage() {
         <main className="flex flex-col items-center px-4 pt-28 pb-24">
 
           {/* ── HERO ── */}
-          <section className="flex flex-col items-center text-center max-w-2xl mx-auto pt-12 pb-8">
+          <section id="features" className="flex flex-col items-center text-center max-w-2xl mx-auto pt-12 pb-8">
             {/* Badge */}
             <div
               className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full glass-card-sm mb-6 text-xs font-medium tracking-wide"
@@ -184,9 +184,9 @@ export default function LandingPage() {
           <div className="max-w-5xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-muted-foreground/50">
             <span>© 2025 Nexus AI Platform. All rights reserved.</span>
             <div className="flex items-center gap-4">
-              <Link href="#" className="hover:text-muted-foreground transition-colors">Privacy</Link>
-              <Link href="#" className="hover:text-muted-foreground transition-colors">Terms</Link>
-              <Link href="#" className="hover:text-muted-foreground transition-colors">Status</Link>
+              <Link href="/privacy" className="hover:text-muted-foreground transition-colors">Privacy</Link>
+              <Link href="/terms" className="hover:text-muted-foreground transition-colors">Terms</Link>
+              <Link href="/status" className="hover:text-muted-foreground transition-colors">Status</Link>
             </div>
           </div>
         </footer>

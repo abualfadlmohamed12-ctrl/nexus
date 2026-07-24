@@ -4,15 +4,14 @@ import { useState } from 'react'
 import Link from 'next/link'
 import { useTheme } from '@/components/theme-provider'
 import { NexusLogo } from '@/components/nexus-logo'
-import { Sun, Moon, Menu, X, ChevronDown } from 'lucide-react'
-import { cn } from '@/lib/utils'
+import { Sun, Moon, Menu, X } from 'lucide-react'
 
 const navLinks = [
-  { label: 'Products', href: '#' },
+  { label: 'Products', href: '/#features' },
   { label: 'Templates', href: '/templates' },
   { label: 'Pricing', href: '/pricing' },
-  { label: 'Enterprise', href: '#' },
-  { label: 'Docs', href: '#' },
+  { label: 'Enterprise', href: '/enterprise' },
+  { label: 'Docs', href: '/docs' },
 ]
 
 export function Header({ variant = 'landing' }: { variant?: 'landing' | 'app' }) {
